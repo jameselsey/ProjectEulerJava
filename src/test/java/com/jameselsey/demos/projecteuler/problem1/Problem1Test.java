@@ -1,5 +1,6 @@
-package Problem1;
+package com.jameselsey.demos.projecteuler.problem1;
 
+import com.jameselsey.jameselsey.demos.projecteuler.problem1.Problem1;
 import org.junit.Before;
 import org.junit.Test;
 
