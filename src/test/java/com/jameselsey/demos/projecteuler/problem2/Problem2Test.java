@@ -1,20 +1,25 @@
 package com.jameselsey.demos.projecteuler.problem2;
 
+import com.jameselsey.jameselsey.demos.projecteuler.problem2.Problem2;
+import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Author:  JElsey
- * Date:    06/11/2012
- */
+import static org.fest.assertions.Assertions.assertThat;
+
 public class Problem2Test
 {
-    @Test
-    public void testFibonacciSequence()
+    private Problem2 problem2;
+
+    @Before
+    public void setup()
     {
-        int max = 10;
+        problem2 = new Problem2();
+    }
 
-        problem2.generateSequence(max);
-
-
+    @Test
+    public void testTheProblem()
+    {
+        int upperLimit = 100;
+        assertThat(Problem2.execute(upperLimit)).isEqualTo(44);
     }
 }
